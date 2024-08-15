@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>welcome to Pinboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,body{
+    height: 100%;
+    width: 100%;
+  }
+.log{
+  transition: all ease 0.4s;
+}
+.log:hover{
+  background-color: rgba(168, 4, 4, 0.787);
+  color: silver;
+  border: 2px solid white;
+  scale: 1.1;
+}
+
+</style>
+<body>
+<% if(nav === true){ %>
+  <div class="w-full px-10 py-3 flex justify-between bg-zinc-800 text-white  items-center">
+    <h3>Pinboard</h3>
+    <div class="flex gap-10 items-center">
+      <a id="pro" href="/profile">profile</a>
+      <a id="fee" href="/feed">Feed</a>
+      <a class="log px-3 py-2 bg-red-700 text-white rounded-lg" href="/logout">Logout</a>
+    </div>
+    
+  </div>
+<% } %>
+  
